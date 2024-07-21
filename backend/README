@@ -1,0 +1,67 @@
+ 
+npm init -y
+
+npm install express -save
+
+Inside package.js -> 
+
+    "scripts": {
+    "start": "node ./src/server.js"
+    }
+
+- Then can by execute 'npm start'
+
+
+HTTP Methods :
+    GET : Read
+    POST : Create
+    PUT : Update
+    DELETE : Delete
+    PATCH : Partial Update
+
+DML - Data Manipulation Language:
+    - SELECT
+    - INSERT
+    - UPDATE
+    - DELETE
+
+DDL - Data Definition Language:
+    - CREATE
+    - ALTER
+    - DROP
+    - TRUNCATE  
+
+Developper Tools :
+
+    - nodemon : auto restart server when file change
+        npm install nodemon --save-dev
+
+    Inside package.js -> 
+        "dev": "nodemon ./src/server.js"
+
+    - Then can by execute 'npm run dev'
+
+Error Handling:
+    - npm install express-async-errors --save
+
+Install SQLITE:
+    - npm install sqlite3 sqlite --save
+
+Hashing Password:
+    - npm install bcryptjs
+
+SQL Query Builder
+
+    - npm install knex --save
+
+    - npx knex init
+
+    Create Table:
+    - npx knex migrate:make createNotes
+
+    Run migration:
+    -npx knex migrate:latest => npm run migrate
+
+Imstall:
+
+    - npm install jsonwebtoken
