@@ -13,15 +13,15 @@ class DiskStorage {
     }
 
     async deleteFile(file) {
-        const filePAth = path.resolve(uploadConfig.UPLOADS_FOLDER, file);
+        const filePath = path.resolve(uploadConfig.UPLOADS_FOLDER, file);
     
         try {
-            await fs.promises.stat(filePAth);
+            await fs.promises.stat(filePath);
         } catch {
             return;
         }
     
-        await fs.promises.unlink(filePAth);
+        await fs.promises.unlink(filePath);
     }
 }
 
