@@ -11,18 +11,21 @@ class DiskStorage {
 
         return file;
     }
-}
 
-async deleteFile(file) {
-    const filePAth = path.resolve(uploadConfig.UPLOADS_FOLDER, file);
-
-    try {
-        await fs.promises.stat(filePAth);
-    } catch {
-        return;
+    async deleteFile(file) {
+        const filePAth = path.resolve(uploadConfig.UPLOADS_FOLDER, file);
+    
+        try {
+            await fs.promises.stat(filePAth);
+        } catch {
+            return;
+        }
+    
+        await fs.promises.unlink(filePAth);
     }
-
-    await fs.promises.unlink(filePAth);
 }
+
+
+
 
 module.exports = DiskStorage;
