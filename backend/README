@@ -62,6 +62,10 @@ SQL Query Builder
     Run migration:
     -npx knex migrate:latest => npm run migrate
 
-Imstall:
+Imstall Auth:
 
     - npm install jsonwebtoken
+
+Install Uplader Files:
+
+    - npm install multer
