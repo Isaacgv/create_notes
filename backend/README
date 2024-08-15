@@ -69,3 +69,9 @@ Imstall Auth:
 Install Uplader Files:
 
     - npm install multer
+
+Install CORS:
+    - npm install cors
+
+Install to request http:
+    - npm install axios
