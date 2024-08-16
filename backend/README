@@ -73,5 +73,3 @@ Install Uplader Files:
 Install CORS:
     - npm install cors
 
-Install to request http:
-    - npm install axios
