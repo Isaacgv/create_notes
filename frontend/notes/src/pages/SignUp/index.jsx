@@ -5,7 +5,7 @@ import { Button } from '../../components/Button';
 import {  FiMail, FiLock, FiUser} from 'react-icons/fi';
 import { Link, useNavigate } from 'react-router-dom';
 
-import { api } from "../../seervices/api"; 
+import { api } from "../../services/api"; 
 
 export function SignUp() {
   const [name, setName] = useState("");

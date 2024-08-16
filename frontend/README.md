@@ -20,3 +20,6 @@ To detect in  VStudio->  vscode-styled-components
 *VS Code :
  - Path Intellisense
  - Material Icon Theme
+
+ Install to request http:
+    - npm install axios
